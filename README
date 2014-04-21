@@ -1,0 +1,17 @@
+# Peer assessment
+This script generates a new dataset from the training and test measurement files given. The new dataset only contains the variables that have a name that ends with "-std()" or "-mean()".
+The new dataset can be generated simply by executing the following line:
+Rscript run_analysis.R
+
+The folder with the dataset is in the same one as the script and the name of the output file is fulldataset_mean_std.txt.
+
+
+Th steps are as follows:
+1) Load the feature information
+2) Load the needed features. I was nos satisfied with the read functions provided by the base environment so I implemented one that only selects the indices needed.
+3) Merge the train and test datasets.
+4) Load the activity labels.
+5) Translate the activity indexes to labels.
+6) Add the activity labels to the dataset generated on step 3.
+7) Save the new dataset.
+
