@@ -1,4 +1,6 @@
+
 # Peer assessment
+
 This script generates a new dataset from the training and test measurement files given. The new dataset only contains the variables that have a name that ends with "-std()" or "-mean()".
 The new dataset can be generated simply by executing the following line:
 Rscript run_analysis.R
